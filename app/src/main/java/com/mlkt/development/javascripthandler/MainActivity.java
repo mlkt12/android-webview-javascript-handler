@@ -29,8 +29,6 @@ public class MainActivity extends AppCompatActivity {
         webView.clearCache(true);
         webView.clearHistory();
         webView.getSettings().setJavaScriptEnabled(true);
-        final String mime = "text/html";
-        final String encoding = "utf-8";
         webView.getSettings().setSupportZoom(true);
         webView.addJavascriptInterface(new JavaScriptHandler(), "Android");
 
